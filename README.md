@@ -36,9 +36,18 @@ python seq_transformation.py
 1. cd ./Human_parsing
 2. Download checkpoints and put it into the **./checkpoints/resnet101** folder:
 ```
-**Run:** ```python gen_parsing.py --samples_txt_path ./ntu120.txt --ntu60_path person_frame_path --ntu120_path person_frame_path``` <br />
-**Example:** ```python gen_parsing.py --samples_txt_path ./test_sample.txt --ntu60_path ./dataset/ntu60/ --ntu120_path ./dataset/ntu120/``` <br />
-
+**Run:** 
+```
+python gen_parsing.py --samples_txt_path ./ntu120.txt \
+      --ntu60_path person_frame_path \
+      --ntu120_path person_frame_path
+```
+**Example:** 
+```
+python gen_parsing.py --samples_txt_path ./test_sample.txt \
+      --ntu60_path ./dataset/ntu60/ \
+      --ntu120_path ./dataset/ntu120/
+```
 # Pose branch
 ## Training NTU60
 On the benchmark of XView, using joint modality, run: ```python Pose_main.py --device 0 1 --config ./config/nturgbd-cross-view/joint.yaml``` <br />
