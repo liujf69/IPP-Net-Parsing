@@ -1,0 +1,5 @@
+Run:
+python gen_parsing.py --samples_txt_path ./ntu120.txt --ntu60_path person_frame_path --ntu120_path person_frame_path 
+
+Example:
+python gen_parsing.py --samples_txt_path ./test_sample.txt --ntu60_path ./dataset/ntu60/ --ntu120_path ./dataset/ntu120/
