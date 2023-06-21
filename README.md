@@ -59,7 +59,12 @@ On the benchmark of XSub, using joint modality, run: ```python Pose_main.py --de
 On the benchmark of XSet, using joint modality, run: ```python Pose_main.py --device 0 1 --config ./config/nturgbd120-cross-set/joint.yaml``` <br />
 
 # Parsing branch
+## Training NTU60
+On the benchmark of XView, run: ```python Parsing_main.py recognition -c ./config/nturgbd-cross-view/parsing_train.yaml``` <br />
+On the benchmark of XSub, run: ```python Parsing_main.py recognition -c ./config/nturgbd-cross-subject/parsing_train.yaml``` <br />
+## Training NTU120
+On the benchmark of XSub, run: ```python Parsing_main.py recognition -c ./config/nturgbd120-cross-subject/parsing_train.yaml``` <br />
+On the benchmark of XSet, run: ```python Parsing_main.py recognition -c ./config/nturgbd120-cross-set/parsing_train.yaml``` <br />
 
-
-
-
+# Contact
+For any questions, feel free to contact: ```liujf69@mail2.sysu.edu.cn```
