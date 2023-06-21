@@ -2,7 +2,7 @@
 **This is the official repo of EPP-Net.**
 ![image](https://github.com/liujf69/EPP-Net_Parsing/blob/master/Fig.png)
 # Prerequisites
-You can install all dependencies by running ```pip install -r requirements.txt```  <br />
+You can install necessary dependencies by running ```pip install -r requirements.txt```  <br />
 Then, you need to install torchlight by running ```pip install -e torchlight```  <br />
 
 # Data Preparation
@@ -33,10 +33,9 @@ python get_raw_denoised_data.py
 python seq_transformation.py
 ```
 ## Extract human parsing data
-```
-1. cd ./Human_parsing
-2. Download checkpoints and put it into the "./checkpoints/resnet101" folder:
-```
+1. cd ```./Human_parsing```
+2. Download checkpoints and put it into the ```./checkpoints/resnet101``` folder: [PSP_Net](https://drive.google.com/file/d/1SGehQsE72odFnqPidK_EWWJjhGI8Ptbk/view?usp=sharing) <br />
+
 **Run:** 
 ```
 python gen_parsing.py --samples_txt_path ./ntu120.txt \
