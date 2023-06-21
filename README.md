@@ -35,7 +35,7 @@ python seq_transformation.py
 ## Extract human parsing data
 ```
 1. cd ./Human_parsing
-2. Download checkpoints and put it into the **./checkpoints/resnet101** folder:
+2. Download checkpoints and put it into the "./checkpoints/resnet101" folder:
 ```
 **Run:** 
 ```
