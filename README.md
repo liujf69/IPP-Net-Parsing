@@ -1,6 +1,6 @@
-# EPP-Net_Parsing
+# IPP-Net_Parsing
 **This is the official repo of IPP-Net.**
-![image](https://github.com/liujf69/EPP-Net_Parsing/blob/master/Fig.png)
+
 # Prerequisites
 You can install necessary dependencies by running ```pip install -r requirements.txt```  <br />
 Then, you need to install torchlight by running ```pip install -e torchlight```  <br />
