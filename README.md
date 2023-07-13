@@ -48,7 +48,7 @@ python gen_parsing.py --samples_txt_path ./test_sample.txt \
       --ntu60_path ./dataset/ntu60/ \
       --ntu120_path ./dataset/ntu120/
 ```
-# Pose branch
+# Traing pose branch
 ## Training NTU60
 On the benchmark of XView, using joint modality, run: ```python Pose_main.py --device 0 1 --config ./config/nturgbd-cross-view/joint.yaml``` <br />
 On the benchmark of XSub, using joint modality, run: ```python Pose_main.py --device 0 1 --config ./config/nturgbd-cross-subject/joint.yaml``` <br />
@@ -57,13 +57,26 @@ On the benchmark of XSub, using joint modality, run: ```python Pose_main.py --de
 On the benchmark of XSub, using joint modality, run: ```python Pose_main.py --device 0 1 --config ./config/nturgbd120-cross-subject/joint.yaml``` <br />
 On the benchmark of XSet, using joint modality, run: ```python Pose_main.py --device 0 1 --config ./config/nturgbd120-cross-set/joint.yaml``` <br />
 
-# Parsing branch
+# Traing parsing branch
 ## Training NTU60
 On the benchmark of XView, run: ```python Parsing_main.py recognition -c ./config/nturgbd-cross-view/parsing_train.yaml``` <br />
 On the benchmark of XSub, run: ```python Parsing_main.py recognition -c ./config/nturgbd-cross-subject/parsing_train.yaml``` <br />
 ## Training NTU120
 On the benchmark of XSub, run: ```python Parsing_main.py recognition -c ./config/nturgbd120-cross-subject/parsing_train.yaml``` <br />
 On the benchmark of XSet, run: ```python Parsing_main.py recognition -c ./config/nturgbd120-cross-set/parsing_train.yaml``` <br />
+
+# Testing 
+## Testing NTU120XSub
+```python ensemble.py --benchmark NTU120XSub --joint_Score ./Pose/ntu120_XSub_joint.pkl --bone_Score ./Pose/ntu120_XSub_bone.pkl --jointmotion_Score ./Pose/ntu120_XSub_jointmotion.pkl --bonemotion_Score ./Pose/ntu120_XSub_bonemotion.pkl --parsing_Score ./Parsing/ntu120_XSub_best.pkl --val_sample ./Val_sample/NTU120_CTR_CSub_test.txt --match_txt ./Match_txt/ntu120_XSubpair.txt```
+
+## Testing NTU120XSet
+```python ensemble.py --benchmark NTU120XSet --joint_Score ./Pose/ntu120_XSet_joint.pkl --bone_Score ./Pose/ntu120_XSet_bone.pkl --jointmotion_Score ./Pose/ntu120_XSet_jointmotion.pkl --bonemotion_Score ./Pose/ntu120_XSet_bonemotion.pkl --parsing_Score ./Parsing/ntu120_XSet_best.pkl --val_sample ./Val_sample/NTU120_CTR_CSet_test.txt --match_txt ./Match_txt/ntu120_XSetpair.txt```
+
+## Testing NTU60XSub
+```python ensemble.py --benchmark NTU60XSub --joint_Score ./Pose/ntu60_XSub_joint.pkl --bone_Score ./Pose/ntu60_XSub_bone.pkl --jointmotion_Score ./Pose/ntu60_XSub_jointmotion.pkl --bonemotion_Score ./Pose/ntu60_XSub_bonemotion.pkl --parsing_Score ./Parsing/ntu60_XSub_best.pkl --val_sample ./Val_sample/NTU60_CTR_CSub_test.txt --match_txt ./Match_txt/ntu60_XSubpair.txt```
+
+## Testing NTU60XView
+```python ensemble.py --benchmark NTU60XView --joint_Score ./Pose/ntu60_XView_joint.pkl --bone_Score ./Pose/ntu60_XView_bone.pkl --jointmotion_Score ./Pose/ntu60_XView_jointmotion.pkl --bonemotion_Score ./Pose/ntu60_XView_bonemotion.pkl --parsing_Score ./Parsing/ntu60_XView_best.pkl --val_sample ./Val_sample/NTU60_CTR_CView_test.txt --match_txt ./Match_txt/ntu60_XViewpair.txt```
 
 # Contact
 For any questions, feel free to contact: ```liujf69@mail2.sysu.edu.cn```
