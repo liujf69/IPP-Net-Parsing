@@ -78,5 +78,15 @@ On the benchmark of XSet, run: ```python Parsing_main.py recognition -c ./config
 ## Testing NTU60XView
 ```python ensemble.py --benchmark NTU60XView --joint_Score ./Pose/ntu60_XView_joint.pkl --bone_Score ./Pose/ntu60_XView_bone.pkl --jointmotion_Score ./Pose/ntu60_XView_jointmotion.pkl --bonemotion_Score ./Pose/ntu60_XView_bonemotion.pkl --parsing_Score ./Parsing/ntu60_XView_best.pkl --val_sample ./Val_sample/NTU60_CTR_CView_test.txt --match_txt ./Match_txt/ntu60_XViewpair.txt```
 
+# Citation
+```
+@inproceedings{Ding&Wen,
+  author={Ding, Runwei and Wen, Yuhang and Liu, Jinfu and Dai, Nan and Meng, Fanyang and Liu Mengyuan},
+  title={Integrating Human Parsing and Pose Network for Human Action Recognition}, 
+  booktitle={Proceedings of the CAAI International Conference on Artificial Intelligence (CICAI)}, 
+  year={2023}
+}
+```
+
 # Contact
 For any questions, feel free to contact: ```liujf69@mail2.sysu.edu.cn```
