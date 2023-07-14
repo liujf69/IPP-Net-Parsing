@@ -1,5 +1,5 @@
 # IPP-Net_Parsing
-**This is the official repo of IPP-Net.**
+**This is the official repo of IPP-Net and our work is accepted by CAAI International Conference on Artificial Intelligence (CICAI 2023).**
 
 # Prerequisites
 You can install necessary dependencies by running ```pip install -r requirements.txt```  <br />
