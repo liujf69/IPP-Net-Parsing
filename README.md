@@ -48,7 +48,7 @@ python gen_parsing.py --samples_txt_path ./test_sample.txt \
       --ntu60_path ./dataset/ntu60/ \
       --ntu120_path ./dataset/ntu120/
 ```
-# Traing pose branch
+# Training pose branch
 ## Training NTU60
 On the benchmark of XView, using joint modality, run: ```python Pose_main.py --device 0 1 --config ./config/nturgbd-cross-view/joint.yaml``` <br />
 On the benchmark of XSub, using joint modality, run: ```python Pose_main.py --device 0 1 --config ./config/nturgbd-cross-subject/joint.yaml``` <br />
@@ -57,7 +57,7 @@ On the benchmark of XSub, using joint modality, run: ```python Pose_main.py --de
 On the benchmark of XSub, using joint modality, run: ```python Pose_main.py --device 0 1 --config ./config/nturgbd120-cross-subject/joint.yaml``` <br />
 On the benchmark of XSet, using joint modality, run: ```python Pose_main.py --device 0 1 --config ./config/nturgbd120-cross-set/joint.yaml``` <br />
 
-# Traing parsing branch
+# Training parsing branch
 ## Training NTU60
 On the benchmark of XView, run: ```python Parsing_main.py recognition -c ./config/nturgbd-cross-view/parsing_train.yaml``` <br />
 On the benchmark of XSub, run: ```python Parsing_main.py recognition -c ./config/nturgbd-cross-subject/parsing_train.yaml``` <br />
