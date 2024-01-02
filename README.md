@@ -81,7 +81,7 @@ On the benchmark of XSet, run: ```python Parsing_main.py recognition -c ./config
 # Citation
 ```
 @inproceedings{ding2023integrating,
-  author={Ding, Runwei and Wen, Yuhang and Liu, Jinfu and Dai, Nan and Meng, Fanyang and Liu Mengyuan},
+  author={Ding, Runwei and Wen, Yuhang and Liu, Jinfu and Dai, Nan and Meng, Fanyang and Liu, Mengyuan},
   title={Integrating Human Parsing and Pose Network for Human Action Recognition}, 
   booktitle={Proceedings of the CAAI International Conference on Artificial Intelligence (CICAI)}, 
   year={2023}
