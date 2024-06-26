@@ -1,5 +1,5 @@
 # IPP-Net_Parsing
-**This is the official repo of IPP-Net and our work [Integrating Human Parsing and Pose Network for Human Action Recognition](https://link.springer.com/chapter/10.1007/978-981-99-8850-1_15) is accepted by CAAI International Conference on Artificial Intelligence (CICAI 2023).**
+**This is the official repo of IPP-Net and our work [Integrating Human Parsing and Pose Network for Human Action Recognition](https://link.springer.com/chapter/10.1007/978-981-99-8850-1_15) is accepted by CAAI International Conference on Artificial Intelligence (CICAI 2023).** [![Paper](https://img.shields.io/badge/cs.CV-Paper-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2307.07977)
 ![image](https://github.com/liujf69/IPP-Net-Parsing/blob/master/IPPNet.png)
 # Prerequisites
 You can install necessary dependencies by running ```pip install -r requirements.txt```  <br />
